@@ -4,7 +4,7 @@
 
 This is a simple noise generator designed to simulate various activities over a VPN tunnel.
 
-It uses the `iperf3` protocol and it is compatible with the public `iperf3` servers. I will publish separately a detailed description of the protocol, now that there are public servers offering it.
+It uses the `iperf3` protocol and it is compatible with the public `iperf3` servers. You can read a brief overview of the protocol [here](https://github.com/mmomtchev/vpn-noise-generator/blob/master/iPerf3.md).
 
 It is a tool meant to defeat VPN traffic analyzing.
 
