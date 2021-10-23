@@ -1,0 +1,36 @@
+{
+    "streams": [
+        {
+            "rate": 10000,
+            "variation": 0.5,
+            "reverse": false
+        },
+        {
+            "rate": 50000,
+            "variation": 0.8,
+            "reverse": true
+        }
+    ],
+    "servers": [
+        {
+            "host": "ping.online.net",
+            "port": 5202
+        },
+        {
+            "host": "speedtest.serverius.net",
+            "port": 5002
+        },
+        {
+            "host": "ch.iperf.014.fr",
+            "port": 18817
+        },
+        {
+            "host": "iperf.par2.as49434.net",
+            "port": 9205
+        },
+        {
+            "host": "paris.testdebit.info",
+            "port": 9205
+        }
+    ]
+}

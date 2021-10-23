@@ -1,0 +1,25 @@
+{
+  "name": "vpn-noise-generator",
+  "version": "1.0.0",
+  "description": "Generates artificial trafic to simulate activity over a VPN tunnel",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mmomtchev/vpn-noise-generator.git"
+  },
+  "keywords": [
+    "vpn",
+    "noise",
+    "snooping",
+    "anonimity"
+  ],
+  "author": "Momtchil Momtchev <momtchil@momtchev.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mmomtchev/vpn-noise-generator/issues"
+  },
+  "homepage": "https://github.com/mmomtchev/vpn-noise-generator#readme"
+}
