@@ -17,8 +17,8 @@ const EXCHANGE_RESULTS = 13;
 const DISPLAY_RESULTS = 14;
 const IPERF_START = 15;
 const IPERF_DONE = 16;
-const ACCESS_DENIED = -1;
-const SERVER_ERROR = -2;
+const ACCESS_DENIED = 255;
+const SERVER_ERROR = 254;
 
 const host = 'ping.online.net';
 const port = 5203;
@@ -135,6 +135,8 @@ function iPerf(options) {
                     case TEST_RUNNING:
                         verbose('we have green light');
                         break;
+                    case ACCESS_DENIED:
+                        console.log('server busy');
                     case EXCHANGE_RESULTS:
                     case DISPLAY_RESULTS:
                     case IPERF_DONE:
