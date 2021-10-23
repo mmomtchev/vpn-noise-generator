@@ -61,9 +61,9 @@ Once the server has received the configuration it will send `CREATE_STREAMS` and
 
 From this moment on, the client is free to start its data connections.
 
-## The stream connections
+### The stream connections
 
-The client can open one or multiple connections. Every connection must start with the cookie. The server cannot handle multiple concurrent clients.
+The client can open one or multiple connections. Every connection must start with the cookie. The server cannot handle multiple concurrent clients - new clients connecting while a test is running will get `ACCESS_DENIED` as their first server message.
 
 After the cookie is sent, the server will
 
@@ -77,7 +77,7 @@ Every message starts with a header:
 
 The rest of the data is not defined.
 
-### End of the connection
+### Session end
 
 At the end of the test, the server sends `EXCHANGE_RESULTS` over the control connection along with its data in JSON format prefixed with a 32-bit length. Both sides send their results, first the client, then the server. Both sides can then proceed to display human-readable statistics.
 
