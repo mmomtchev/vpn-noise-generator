@@ -71,7 +71,7 @@ After the cookie is sent, the server will
 * start sending data if `reverse: true` is present according to `bandwidth` in bauds, `time` in seconds and `length` in bytes parameters
 
 Every message starts with a header:
-| bytes 0-3 | bytes bytes 4-7 | bytes 8-12 (default) or 8-16 (64bit counters CLI option) |
+| bytes 0-3 | bytes bytes 4-7 | bytes 8-11 (default) or 8-15 (64bit counters CLI option) |
 |---|---|---|
 | timestamp (s) | timestamp (µs) | packet counter
 
