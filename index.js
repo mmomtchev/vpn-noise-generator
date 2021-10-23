@@ -163,7 +163,6 @@ for (const stream of config.streams) {
                 stddev: stream.variation
             });
             server++;
-            break;
         }
     })();
 }
